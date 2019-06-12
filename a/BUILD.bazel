@@ -1,0 +1,6 @@
+load("@build_bazel_rules_nodejs//:defs.bzl", "nodejs_binary")
+nodejs_binary(
+    name = "a",
+    data = ["@a_deps//chalk"],
+    entry_point = ":main.js",
+)
